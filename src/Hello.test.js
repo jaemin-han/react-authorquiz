@@ -35,11 +35,17 @@ describe("when testing with ReactDOM", () => {
 });
 
 Enzyme.configure({ adapter: new Adapter() });
+
 describe("When testing with Enzyme", () => {
     it("renders a h1", () => {
         const wrapper = shallow(<Hello now={moment.toISOString()} />);
         expect(wrapper.find("h1").find.length).toBe(1);
     });
+
+    // it("contains Hello at 2020-06-08T14:00:00.000Z", () => {
+    //     const wrapper = shallow(<Hello now={moment.toISOString()} />);
+    //     expect(wrapper.contains(<h1>Hello at 2020-06-08T14:00:00.000Z</h1>)).toBe(true);
+    // });
 });
 
 // Testing Hello.js (Test Scripts)
