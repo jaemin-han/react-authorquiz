@@ -7,3 +7,5 @@ it('renders without crashing', () => {
   ReactDOM.render(<AuthorQuiz />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+// Testing in progress

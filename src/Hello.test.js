@@ -41,3 +41,5 @@ describe("When testing with Enzyme", () => {
         expect(wrapper.find("h1").find.length).toBe(1);
     });
 });
+
+// Testing Hello.js (Test Scripts)
